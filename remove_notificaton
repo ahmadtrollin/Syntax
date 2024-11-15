@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Test Notification";
-    Text = "This will disappear immediately.";
+    Title = "";
+    Text = "";
     Duration = 1; 
 })
 
