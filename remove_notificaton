@@ -1,0 +1,14 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Test Notification";
+    Text = "This will disappear immediately.";
+    Duration = 1; 
+})
+
+-- Clear notifications immediately after
+task.delay(0, function()
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = ""; -- Clear notification by showing an empty one
+        Text = "";
+        Duration = 0;
+    })
+end)
